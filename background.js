@@ -6,15 +6,15 @@ function disableBrowserAction() {
   chrome.tabs.executeScript(null, {file: "js/abort.js"})
 }
 
-function enableBrowserAction() {
-  chrome.browserAction.setIcon({path:"img/enable.png"});
+function beginBrowserAction() {
+  chrome.browserAction.setIcon({path:"img/begin.png"});
   chrome.tabs.executeScript(null, {file: "js/start.js"});
 }
 
 function updateState() {
   if ( x == false ) {
     x = true;
-    enableBrowserAction();
+    beginBrowserAction();
   } else {
     x = false;
     disableBrowserAction();
