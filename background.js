@@ -1,12 +1,12 @@
 var x = false;
 disableBrowserAction();
 
-function disableBrowserAction() {
+function endBrowserAction() {
   chrome.browserAction.setIcon({path:"img/disable.png"});
   chrome.tabs.executeScript(null, {file: "js/abort.js"})
 }
 
-function beginBrowserAction() {
+function startBrowserAction() {
   chrome.browserAction.setIcon({path:"img/begin.png"});
   chrome.tabs.executeScript(null, {file: "js/start.js"});
 }
@@ -14,10 +14,10 @@ function beginBrowserAction() {
 function change_state() {
   if ( x == false ) {
     x = true;
-    beginBrowserAction();
+    startBrowserAction();
   } else {
     x = false;
-    disableBrowserAction();
+    endBrowserAction();
   }
 }
 
