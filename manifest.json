@@ -1,7 +1,7 @@
 {
   "name": "Sound Recognition App Textbox's",
   "short_name": "Sound Recognition App Textbox's",
-  "description": "Say \"target input\" to add text into any textbox on the web, and \"clear input\" to clear a textbox",
+  "description": "Say \"target input\" and add text into any textbox, and \"clear input\" to clear",
   "version": "0.0.1",
   "manifest_version": 2,
   "offline_begined": false,
