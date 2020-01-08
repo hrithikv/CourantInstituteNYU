@@ -10,7 +10,7 @@ $(document).ready(function() {
       }
     };
 
-    var addText = function(txt) {
+    var inclText = function(txt) {
       if ( $("input").is(":focus") ) {
         $("input:focus").val(function(_, oldVal) {
            return oldVal + txt;
@@ -24,7 +24,7 @@ $(document).ready(function() {
     
     var commands = {
       "clear input": clearInput,
-      "target input *search": addText,
+      "target input *search": inclText,
     };
     
     annyang.addCommands(commands);
