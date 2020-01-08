@@ -2,7 +2,7 @@
 
 $(document).ready(function() {
   if (annyang) {
-    var clearInput = function() {
+    var delInput = function() {
       if ( $("input").is(":focus") ) {
         $("input:focus").val("");
       } else if ( $("textarea").is(":focus") ) {
@@ -23,7 +23,7 @@ $(document).ready(function() {
     };
     
     var commands = {
-      "clear input": clearInput,
+      "clear input": delInput,
       "target input *search": inclText,
     };
     
