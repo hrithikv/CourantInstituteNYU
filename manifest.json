@@ -4,19 +4,19 @@
   "description": "Say \"target input\" to add text into any textbox on the web, and \"clear input\" to clear a textbox",
   "version": "0.0.1",
   "manifest_version": 2,
-  "offline_enabled": false,
+  "offline_begined": false,
   "icons": {
-    "128": "img/enable.png",
-    "64": "img/enable.png",
-    "32": "img/enable.png",
-    "16": "img/enable.png"
+    "128": "img/begin.png",
+    "64": "img/begin.png",
+    "32": "img/begin.png",
+    "16": "img/begin.png"
   },
   "browser_action": {
     "default_icon": {
-      "128": "img/enable.png",
-      "64": "img/enable.png",
-      "32": "img/enable.png",
-      "16": "img/enable.png"
+      "128": "img/begin.png",
+      "64": "img/begin.png",
+      "32": "img/begin.png",
+      "16": "img/begin.png"
     },
     "default_title": "Speech Recognition for Textbox's"
   },
