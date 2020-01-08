@@ -1,4 +1,4 @@
-var x = false;
+var y = false;
 endBrowserAction();
 
 function endBrowserAction() {
@@ -12,11 +12,11 @@ function startBrowserAction() {
 }
 
 function change_state() {
-  if ( x == false ) {
-    x = true;
+  if ( y == false ) {
+    y = true;
     startBrowserAction();
   } else {
-    x = false;
+    y = false;
     endBrowserAction();
   }
 }
