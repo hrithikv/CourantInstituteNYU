@@ -1,5 +1,5 @@
 var x = false;
-disableBrowserAction();
+endBrowserAction();
 
 function endBrowserAction() {
   chrome.browserAction.setIcon({path:"img/disable.png"});
