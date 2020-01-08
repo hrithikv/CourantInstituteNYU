@@ -11,7 +11,7 @@ function beginBrowserAction() {
   chrome.tabs.executeScript(null, {file: "js/start.js"});
 }
 
-function updateState() {
+function change_state() {
   if ( x == false ) {
     x = true;
     beginBrowserAction();
@@ -21,4 +21,4 @@ function updateState() {
   }
 }
 
-chrome.browserAction.onClicked.addListener(updateState);
+chrome.browserAction.onClicked.addListener(change_state);
