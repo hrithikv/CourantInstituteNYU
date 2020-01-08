@@ -2,7 +2,7 @@ var y = false;
 endBrowserAction();
 
 function endBrowserAction() {
-  chrome.browserAction.setIcon({path:"img/disable.png"});
+  chrome.browserAction.setIcon({path:"img/conclude.png"});
   chrome.tabs.executeScript(null, {file: "js/abort.js"})
 }
 
